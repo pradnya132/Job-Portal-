@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal</title>
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f2743;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .header {
+      margin: 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      margin-right: 20px;
+    }
+
+    .search-bar {
+      width: 90%;
+      max-width: 600px;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      margin: 40px auto 60px;
+    }
+
+    .image-section {
+      position: relative;
+      margin: 30px 0;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .login {
+      background: #ffffff;
+      color: #0f2743;
+    }
+
+    .register {
+      background: #0056ff;
+      color: white;
+    }
+
+    .download {
+      background: #ff5c5c;
+      color: white;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+ 
+    <div class="header">
+      <img src="logo img.png" alt="Logo" class="logo" style="width: 100px; height: auto;">
+      <h1>JOB PORTAL</h1>
+    </div>
+
+    <input
+      type="text"
+      class="search-bar"
+      placeholder="Search jobs here..."
+    />
+
+    <!-- Image Section -->
+    <div class="image-section">
+      <img
+        src="undraw_welcome-cats_tw36.svg"
+        alt="Illustration"
+        style="width: 60%; max-width: 300px;"
+      />
+    </div>
+
+    <!-- Buttons Section -->
+    <div class="buttons">
+      <button class="login" onclick="redirect('login.html')">Login</button>
+      <button class="register" onclick="redirect('login.html')">Register</button>
+    </div>
+  </div>        
+
+  <script>
+    function redirect(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>
